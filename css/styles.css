@@ -1,0 +1,181 @@
+:root {
+  --accent: #6e3086;
+  --accent: #6b1e67;
+  --pure-white: #fff;
+}
+
+.body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: var(--accent);
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 60px;
+}
+
+.section-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header {
+  background-color: var(--accent, #801772);
+}
+
+.header a {
+  color: var(--pure-white);
+  text-decoration: none;
+}
+
+.header-nav {
+  padding: 11px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 20%;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.header-logo img {
+  width: 100%;
+  height: 60px;
+  object-fit: contain;
+}
+
+.header-menu {
+  width: 78%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  font-weight: bolder;
+}
+
+.header-menu-link {
+  padding: 15px;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.header-menu :hover {
+  background-color: #7a3d92;
+}
+
+.intro {
+  padding: 60px 0;
+}
+
+.intro-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.intro-left {
+  width: 30%;
+}
+
+.intro-img {
+  width: 250;
+  height: 250;
+  border-radius: 50%;
+  border: 6px solid #6b1e67;
+}
+
+.intro-right {
+  width: 60%;
+}
+
+.intro-right h1,
+.intro-right h3 {
+  margin: 0 0 10;
+}
+
+.contacts {
+  margin-bottom: 60px;
+}
+
+.contacts ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.skills {
+  color: var(--pure-white);
+  background-color: var(--accent);
+}
+
+.skills ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 7px;
+}
+
+.skills li {
+  padding: 10px 25px;
+  background-color: #7a3d92;
+  border-radius: 4px;
+}
+
+.code-example {
+  text-align: center;
+}
+
+.code-example p {
+  font-style: italic;
+}
+
+.code-example pre {
+  width: 50%;
+  margin: 0 auto;
+  padding-left: 50px;
+  text-align: left;
+  font-size: 1.2em;
+  color: var(--pure-white);
+  background-color: #6b1e67;
+  border-radius: 8px;
+}
